@@ -11,10 +11,9 @@ const codes = [
   "a"
 ];
 
-function init() {
-  let index = 0
 
-  document.body.addEventListener("keydown", sequenceCheker(e) {
+
+function sequenceChecker(e) {
     const keyPressed = e.key;
 
     if (keyPressed === codes[index]) {
@@ -24,5 +23,9 @@ function init() {
         alert("Nice one!");
       }
     }
-  })
-}
+  }
+
+  function init() {
+    let index = 0
+    document.body.addEventListener("keydown", sequenceChecker(e))
+  }
