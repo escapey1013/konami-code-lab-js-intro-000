@@ -11,8 +11,6 @@ const codes = [
   "a"
 ];
 
-
-
 function sequenceChecker() {
     const keyPressed = e.key;
 
@@ -27,5 +25,15 @@ function sequenceChecker() {
 
   function init() {
     let index = 0
-    document.body.addEventListener("keydown", sequenceChecker())
+    document.body.addEventListener("keydown", function(e) {
+      const keyPressed = e.key;
+
+      if (keyPressed === codes[index]) {
+        index++
+
+        if (index === codes.length) {
+          alert("Nice one!");
+    }
   }
+})
+}
