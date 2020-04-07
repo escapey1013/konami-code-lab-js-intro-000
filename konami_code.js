@@ -12,5 +12,17 @@ const codes = [
 ];
 
 function init() {
-  // your code here
+  let index = 0
+
+  document.body.addEventListener("keydown", sequenceCheker(e) {
+    const keyPressed = e.key;
+
+    if (keyPressed === codes[index]) {
+      index++
+
+      if (index === codes.length) {
+        alert("Nice one!");
+      }
+    }
+  })
 }
