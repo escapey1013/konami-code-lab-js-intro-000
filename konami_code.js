@@ -27,5 +27,5 @@ function sequenceChecker(e) {
 
   function init() {
     let index = 0
-    document.body.addEventListener("keydown", sequenceChecker(e))
+    document.body.addEventListener("keydown", sequenceChecker())
   }
