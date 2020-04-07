@@ -13,7 +13,7 @@ const codes = [
 
 
 
-function sequenceChecker(e) {
+function sequenceChecker() {
     const keyPressed = e.key;
 
     if (keyPressed === codes[index]) {
